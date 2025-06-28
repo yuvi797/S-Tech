@@ -59,24 +59,24 @@ const Hero: React.FC = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <img 
-                  src="/public/image.png" 
+                  src="/image.png" 
                   alt="Modern Living Room" 
                   className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
                 />
                 <img 
-                  src="/public/image 12.png" 
+                  src="/image 12.png" 
                   alt="Elegant Bedroom" 
                   className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
                 />
               </div>
               <div className="space-y-4 pt-8">
                 <img 
-                  src="/public/image 11.png" 
+                  src="/image 11.png" 
                   alt="Designer Kitchen" 
                   className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
                 />
                 <img 
-                  src="/public/image 8.png" 
+                  src="/image 8.png" 
                   alt="Stylish Decor" 
                   className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
                 />
