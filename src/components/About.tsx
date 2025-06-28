@@ -44,10 +44,14 @@ const About: React.FC = () => {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           <div className="animate-slide-in-left">
-            <img
-              src="/certificate.png"
-              alt="S-Tech Enterprises Company Certificate"
-              className="rounded-lg shadow-lg w-full border-2 border-gray-200"
+            <video
+              src="/stechvedio .mp4"
+              autoPlay
+              muted
+              loop
+                            className="rounded-lg shadow-lg w-full h-auto border-2 border-gray-200"
+
+           
             />
           </div>
 

@@ -83,6 +83,42 @@ const Products: React.FC = () => {
       description:
         "Modern designer TV unit with ample storage and sleek design.",
     },
+    {
+      id: 13,
+      name: "Elegant Dining Room Set",
+      category: "furniture",
+      image: "/image 13.png",
+      price: "₹1,50,000",
+      description:
+        "Luxurious dining room set with a modern touch for family gatherings.",
+    },
+    {
+      id: 14,
+      name: "Panoramic Window View",
+      category: "decor",
+      image: "/image 14.png",
+      price: "₹25,000",
+      description:
+        "Stylish window decor to enhance your room's natural light and ambiance.",
+    },
+    {
+      id: 15,
+      name: "Window Gallery Art",
+      category: "decor",
+      image: "/image 15.png",
+      price: "₹30,000",
+      description:
+        "Artistic window gallery pieces to add charm to your living space.",
+    },
+    {
+      id: 16,
+      name: "Serene Home Temple",
+      category: "decor",
+      image: "/image 16.png",
+      price: "₹50,000",
+      description:
+        "Beautifully crafted home temple for a peaceful and spiritual corner.",
+    },
   ];
 
   const filteredProducts =

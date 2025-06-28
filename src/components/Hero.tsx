@@ -7,10 +7,7 @@ const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8 animate-fade-in">
-            <div className="flex items-center space-x-2 text-blue-600">
-              <Star className="fill-current" size={20} />
-              <span className="text-sm font-medium">Premium Interior Solutions</span>
-            </div>
+   
             
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
               Transform Your
