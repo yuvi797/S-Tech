@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: /src/
+
+# Sitemap
+Sitemap: https://stechinterior.com/sitemap.xml
+
+# Crawl delay (optional)
+Crawl-delay: 1

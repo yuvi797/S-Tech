@@ -34,11 +34,13 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            About S-Tech Interior
+            About S-Tech Interior - Leading Interior Designers in Patna
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Founded with a vision to transform living spaces into beautiful,
-            functional environments
+            functional environments. We are Patna's premier interior design
+            company specializing in modern furniture, lighting solutions, and
+            home decor.
           </p>
         </div>
 
@@ -66,10 +68,9 @@ const About: React.FC = () => {
               </p>
               <p className="text-gray-600 leading-relaxed">
                 S-Tech Interior is a legally registered and certified interior
-                design company, licensed to operate in Patna.
-                Our certifications ensure that we meet all industry standards
-                and regulatory requirements for professional interior design
-                services.
+                design company, licensed to operate in Patna. Our certifications
+                ensure that we meet all industry standards and regulatory
+                requirements for professional interior design services.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 We hold valid business licenses, GST registration, and

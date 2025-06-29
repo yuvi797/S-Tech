@@ -176,10 +176,10 @@ const Footer: React.FC = () => {
               <div className="flex items-center justify-center sm:justify-start space-x-3">
                 <Mail className="text-blue-400 flex-shrink-0" size={16} />
                 <a
-                  href="mailto:entersisesstar39@gmail.com"
+                  href="mailto:s.techinteriorpatna@gmail.com"
                   className="text-gray-300 hover:text-blue-400 transition-colors duration-300 text-xs sm:text-sm break-all"
                 >
-                  entersisesstar39@gmail.com
+                  s.techinteriorpatna@gmail.com
                 </a>
               </div>
             </div>

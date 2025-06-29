@@ -7,11 +7,13 @@ const Contact: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Get In Touch
+            Contact S-Tech Interior - Best Interior Designers in Patna
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to transform your space? Contact us for a consultation or
-            visit our showroom
+            Ready to transform your space with premium furniture and modern
+            interior design? Contact our expert team in Patna for a free
+            consultation or visit our showroom for personalized interior design
+            solutions.
           </p>
         </div>
 
@@ -62,10 +64,10 @@ const Contact: React.FC = () => {
                   <div>
                     <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
                     <a
-                      href="mailto:entersisesstar39@gmail.com"
+                      href="mailto:s.techinteriorpatna@gmail.com"
                       className="text-blue-600 hover:text-blue-700"
                     >
-                      entersisesstar39@gmail.com
+                      s.techinteriorpatna@gmail.com
                     </a>
                   </div>
                 </div>
@@ -79,8 +81,7 @@ const Contact: React.FC = () => {
                       Business Hours
                     </h4>
                     <div className="text-gray-600">
-            
-                        <p>Our Store is Open 24/7 </p>
+                      <p>Our Store is Open 24/7 </p>
                     </div>
                   </div>
                 </div>

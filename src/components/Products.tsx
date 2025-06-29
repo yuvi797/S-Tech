@@ -131,11 +131,12 @@ const Products: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 sm:mb-12 lg:mb-16 animate-fade-in">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
-            Our Product Gallery
+            Premium Interior Design Products in Patna
           </h2>
           <p className="text-base sm:text-lg lg:text-xl text-gray-600 max-w-3xl mx-auto px-4">
-            Discover our carefully curated collection of premium interior design
-            products
+            Discover our carefully curated collection of modern furniture,
+            lighting solutions, and home decor products. Quality interior design
+            items for every room in your home.
           </p>
         </div>
 
@@ -171,8 +172,9 @@ const Products: React.FC = () => {
               <div className="relative group">
                 <img
                   src={product.image}
-                  alt={product.name}
+                  alt={`${product.name} - Premium ${product.category} for interior design in Patna`}
                   className="w-full h-40 sm:h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-black bg-opacity-40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center"></div>
               </div>
