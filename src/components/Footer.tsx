@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
           {/* Company Info */}
           <div className="space-y-3 sm:space-y-4 text-center sm:text-left">
             <h3 className="text-xl sm:text-2xl font-bold text-blue-400">
-              S-Tech Enterprises
+              S-Tech Interior
             </h3>
             <p className="text-gray-300 leading-relaxed text-sm sm:text-base">
               Transforming spaces with premium interior design products and
@@ -189,7 +189,7 @@ const Footer: React.FC = () => {
         <div className="border-t border-gray-800 mt-8 sm:mt-10 lg:mt-12 pt-6 sm:pt-8">
           <div className="flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
             <p className="text-gray-400 text-xs sm:text-sm text-center sm:text-left">
-              © {currentYear} S-Tech Enterprises. All rights reserved.
+              © {currentYear} S-Tech Interior. All rights reserved.
             </p>
             <p className="text-gray-400 text-xs sm:text-sm text-center sm:text-right">
               Designed with ❤️ for beautiful interiors

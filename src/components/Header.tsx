@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Menu, X, Home, User, Package, Phone } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Menu, X, Home, User, Package, Phone, Settings } from "lucide-react";
 
 interface HeaderProps {
   activeSection: string;
@@ -14,35 +14,38 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onSectionChange }) => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navigation = [
-    { id: 'home', label: 'Home', icon: Home },
-    { id: 'about', label: 'About', icon: User },
-    { id: 'products', label: 'Products', icon: Package },
-    { id: 'contact', label: 'Contact', icon: Phone },
+    { id: "home", label: "Home", icon: Home },
+    { id: "about", label: "About", icon: User },
+    { id: "products", label: "Products", icon: Package },
+    { id: "services", label: "Services", icon: Settings },
+    { id: "contact", label: "Contact", icon: Phone },
   ];
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
       onSectionChange(sectionId);
     }
     setIsMenuOpen(false);
   };
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/95 backdrop-blur-md shadow-lg' : 'bg-transparent'
-    }`}>
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        isScrolled ? "bg-white/95 backdrop-blur-md shadow-lg" : "bg-transparent"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
           <div className="flex items-center">
             <div className="text-2xl font-bold text-blue-800">
-              S-Tech Enterprises
+              S-Tech Interior
             </div>
           </div>
 
@@ -56,8 +59,8 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onSectionChange }) => {
                   onClick={() => scrollToSection(item.id)}
                   className={`flex items-center space-x-2 px-4 py-2 rounded-lg transition-all duration-200 ${
                     activeSection === item.id
-                      ? 'bg-blue-600 text-white'
-                      : 'text-gray-700 hover:bg-blue-50 hover:text-blue-600'
+                      ? "bg-blue-600 text-white"
+                      : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
                   }`}
                 >
                   <Icon size={18} />
@@ -88,8 +91,8 @@ const Header: React.FC<HeaderProps> = ({ activeSection, onSectionChange }) => {
                     onClick={() => scrollToSection(item.id)}
                     className={`flex items-center space-x-3 px-6 py-4 text-left transition-colors ${
                       activeSection === item.id
-                        ? 'bg-blue-600 text-white'
-                        : 'text-gray-700 hover:bg-blue-50'
+                        ? "bg-blue-600 text-white"
+                        : "text-gray-700 hover:bg-blue-50"
                     }`}
                   >
                     <Icon size={20} />

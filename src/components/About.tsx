@@ -34,7 +34,7 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            About S-Tech Enterprises
+            About S-Tech Interior
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Founded with a vision to transform living spaces into beautiful,
@@ -49,9 +49,7 @@ const About: React.FC = () => {
               autoPlay
               muted
               loop
-                            className="rounded-lg shadow-lg w-full h-auto border-2 border-gray-200"
-
-           
+              className="rounded-lg shadow-lg w-full h-auto border-2 border-gray-200"
             />
           </div>
 
@@ -67,11 +65,11 @@ const About: React.FC = () => {
                 Registered Interior Design Company
               </p>
               <p className="text-gray-600 leading-relaxed">
-                S-Tech Enterprises is a legally registered and certified
-                interior design company, licensed to operate in Bihar and across
-                India. Our certifications ensure that we meet all industry
-                standards and regulatory requirements for professional interior
-                design services.
+                S-Tech Interior is a legally registered and certified interior
+                design company, licensed to operate in Patna.
+                Our certifications ensure that we meet all industry standards
+                and regulatory requirements for professional interior design
+                services.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 We hold valid business licenses, GST registration, and

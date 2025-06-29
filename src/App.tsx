@@ -1,18 +1,19 @@
-import React, { useState, useEffect } from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import About from './components/About';
-import Products from './components/Products';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
+import React, { useState, useEffect } from "react";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Products from "./components/Products";
+import ServiceInfo from "./components/ServiceInfo";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
-  const [activeSection, setActiveSection] = useState('home');
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'products', 'contact'];
+      const sections = ["home", "about", "products", "services", "contact"];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -20,8 +21,11 @@ function App() {
         if (element) {
           const offsetTop = element.offsetTop;
           const height = element.offsetHeight;
-          
-          if (scrollPosition >= offsetTop && scrollPosition < offsetTop + height) {
+
+          if (
+            scrollPosition >= offsetTop &&
+            scrollPosition < offsetTop + height
+          ) {
             setActiveSection(section);
             break;
           }
@@ -29,16 +33,20 @@ function App() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <div className="min-h-screen">
-      <Header activeSection={activeSection} onSectionChange={setActiveSection} />
+      <Header
+        activeSection={activeSection}
+        onSectionChange={setActiveSection}
+      />
       <Hero />
       <About />
       <Products />
+      <ServiceInfo />
       <Contact />
       <Footer />
       <WhatsAppButton />
