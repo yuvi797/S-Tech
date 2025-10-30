@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -7,9 +7,11 @@ import ServiceInfo from "./components/ServiceInfo";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
+import UserInfoPopup from "./components/UserInfoPopup";
 
 function App() {
   const [activeSection, setActiveSection] = useState("home");
+  const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -37,6 +39,21 @@ function App() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // Handle popup display with 5 second delay
+  useEffect(() => {
+    // Check if user has already submitted info
+    const userInfoSubmitted = localStorage.getItem("userInfoSubmitted");
+
+    if (!userInfoSubmitted) {
+      // Show popup after 5 seconds
+      const timer = setTimeout(() => {
+        setShowPopup(true);
+      }, 5000);
+
+      return () => clearTimeout(timer);
+    }
+  }, []);
+
   return (
     <div className="min-h-screen">
       <Header
@@ -50,6 +67,7 @@ function App() {
       <Contact />
       <Footer />
       <WhatsAppButton />
+      {showPopup && <UserInfoPopup onClose={() => setShowPopup(false)} />}
     </div>
   );
 }
