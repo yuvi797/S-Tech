@@ -60,7 +60,7 @@ const UserInfoPopup: React.FC<UserInfoPopupProps> = ({ onClose }) => {
   const submitUserInfo = async (userData: FormData) => {
     const API_ENDPOINT =
     
-      "https://script.google.com/macros/s/AKfycbwkocllJhj31b-qq3S2U9_pQ_vICyF7A5b6zyh-OW1tWRXuAZDlZgBLlDqn90oPsasC/exec";
+      "https://script.google.com/macros/s/AKfycbxK6fYPM5RvqrPucmoLRccNaiyZbcq7igXZOJvKxvDo1gF8ONsXrQuWwYUYlVinOvUr/exec";
 
     try {
       // Use GET request with query parameters - NO CORS preflight
