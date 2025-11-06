@@ -1,1 +1,1 @@
-# s-tech-interior
+# s-tech-interior.
