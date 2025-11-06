@@ -62,7 +62,10 @@ const UserInfoPopup: React.FC<UserInfoPopupProps> = ({ onClose }) => {
     
       "https://script.google.com/macros/s/AKfycbxK6fYPM5RvqrPucmoLRccNaiyZbcq7igXZOJvKxvDo1gF8ONsXrQuWwYUYlVinOvUr/exec";
 
-    try {
+   console.log("api",API_ENDPOINT);
+   
+   
+      try {
       // Use GET request with query parameters - NO CORS preflight
       const params = new URLSearchParams();
       params.append("name", userData.name);
